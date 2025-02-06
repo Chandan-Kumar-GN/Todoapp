@@ -40,7 +40,7 @@ pipeline {
                         docker pull chandan709/my-webapp:latest &&
                         docker stop webapp-container || true &&
                         docker rm webapp-container || true &&
-                        docker run -d --name webapp-container -p 80:80 chandan709/my-webapp:latest
+                        docker run -d --name webapp-container -p 8080:80 chandan709/my-webapp:latest
                         '
 
                         """
